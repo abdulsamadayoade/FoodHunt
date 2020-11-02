@@ -122,22 +122,12 @@ h2 {
     margin: 3.3rem 0;
 }
 
-/* FAMILY SECTION */
+/* SHARED STYLES BY SECTONS */
 
-.family {
+.family,
+.locally {
     padding: 5rem 0;
-    background-image: url("images/pattern-curve-top-right.svg");
     background-repeat: no-repeat;
-    background-position: center left;
-}
-
-.image-box {
-    background-image: url("images/enjoyable-place-mobile.jpg");
-    background-size: cover;
-    height: 60rem;
-    width: 100%;
-    transform: translateY(-18%);
-    box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
 }
 
 .content-box {
@@ -150,4 +140,46 @@ h2 {
 
 .content-box h2 {
     margin-bottom: 3rem;
+}
+
+.image-box {
+    background-size: cover;
+    height: 60rem;
+    width: 100%;
+    transform: translateY(-18%);
+    box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+}
+
+/* FAMILY SECTION */
+
+.family {
+    background-image: url("images/pattern-curve-top-right.svg");
+    background-position: center left;
+}
+
+.family .image-box {
+    background-image: url("images/enjoyable-place-mobile.jpg");
+}
+
+/* LOCALLY SECTION */
+
+.locally {
+    background-image: url("images/pattern-curve-top-left.svg");
+    background-position: center right;
+}
+
+.locally .image-box {
+    background-image: url("images/locally-sourced-mobile.jpg");
+    position: relative;
+}
+
+.locally .image-box::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: -10rem;
+    width: 20rem;
+    height: 10rem;
+    background-image: url("images/pattern-lines.svg");
+    background-repeat: no-repeat;
 }
