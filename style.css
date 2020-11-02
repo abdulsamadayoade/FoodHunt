@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Spartan Bold";
+    src: url("textfont/Spartan-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spartan Regular";
+    src: url("textfont/Spartan-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spartan Thin";
+    src: url("textfont/Spartan-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spartan ExtraLight";
+    src: url("textfont/Spartan-ExtraLight.ttf") format("truetype");
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Spartan Regular", sans-serif;
+}
+
+body {font-size: 1.7rem;}
+
+p {line-height: 1.75;}
+
+a {text-decoration: none;}
+
+/* BASIC AND REUSABLE CLASSES */
+
+.container {
+    max-width: 110rem;
+    padding: 0 2.4rem;
+    margin: 0 auto;
+}
+
+.btn {
+    font-size: 1.45rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 2rem 4rem;
+    transition: all .3s ease;
+}
+
+.btn-black {
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+
+.btn-black:hover {
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+
+/* HEADER */
+
+.header {
+    background-image: url("images/hero-bg-desktop.jpg");
+    background-size: cover;
+    color: var(--white-color);
+    min-height: 100vh;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.header .header_text-box {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-80%);
+    max-width: 50rem;
+}
+
+.header_text-box h1 {
+    font-family: "Spartan Thin", sans-serif;
+    font-size: 6.2rem;
+}
+
+.header_text-box p {
+    max-width: 45rem;
+    margin: 4rem 0;
+}
