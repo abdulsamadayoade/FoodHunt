@@ -29,6 +29,8 @@
 :root {
     --white-color: #fff;
     --black-color: #000;
+    --color-gray: #242b37;
+    --color-gray-light: #5c6779;
 }
 
 html {
@@ -42,6 +44,19 @@ p {line-height: 1.75;}
 
 a {text-decoration: none;}
 
+/* HEADINGS */
+
+h1 {
+    font-family: "Spartan Thin", sans-serif;
+    font-size: 6.2rem;
+}
+
+h2 {
+    font-family: "Spartan Bold", sans-serif;
+    font-size: 4rem;
+    color: var(--color-gray);
+}
+
 /* BASIC AND REUSABLE CLASSES */
 
 .container {
@@ -49,6 +64,21 @@ a {text-decoration: none;}
     padding: 0 2.4rem;
     margin: 0 auto;
 }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-2 {
+    flex-basis: 45%;
+}
+
+.color-grey {
+    color: var(--color-gray);
+}
+
+/* BUTTONS */
 
 .btn {
     font-size: 1.45rem;
@@ -75,24 +105,49 @@ a {text-decoration: none;}
     background-image: url("images/hero-bg-desktop.jpg");
     background-size: cover;
     color: var(--white-color);
-    min-height: 100vh;
-    padding: 5rem 0;
+    height: 120vh;
+    padding: 5rem 0 50rem;
     position: relative;
 }
 
 .header .header_text-box {
     position: absolute;
-    top: 80%;
-    transform: translateY(-80%);
+    top: 60%;
+    transform: translateY(-60%);
     max-width: 50rem;
-}
-
-.header_text-box h1 {
-    font-family: "Spartan Thin", sans-serif;
-    font-size: 6.2rem;
 }
 
 .header_text-box p {
     max-width: 45rem;
-    margin: 4rem 0;
+    margin: 3.3rem 0;
+}
+
+/* FAMILY SECTION */
+
+.family {
+    padding: 5rem 0;
+    background-image: url("images/pattern-curve-top-right.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.image-box {
+    background-image: url("images/enjoyable-place-mobile.jpg");
+    background-size: cover;
+    height: 60rem;
+    width: 100%;
+    transform: translateY(-18%);
+    box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+}
+
+.content-box {
+    transform: translateY(30%);
+}
+
+.content-box svg {
+    margin-bottom: 5rem;
+}
+
+.content-box h2 {
+    margin-bottom: 3rem;
 }
