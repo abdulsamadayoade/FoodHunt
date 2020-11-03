@@ -249,3 +249,20 @@ h3 {
     top: 1.5rem;
     left: -3.5rem;
 }
+
+/* RESERVATION SECTION */
+
+.reservation {
+    background-image: url("images/ready-bg-desktop.jpg");
+    background-size: cover;
+    height: 23rem;
+}
+
+.reservation .row {
+    height: 23rem;
+    align-items: center;
+}
+
+.reservation h2 {
+    color: var(--white-color);
+}
