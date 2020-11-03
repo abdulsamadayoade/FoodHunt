@@ -57,6 +57,11 @@ h2 {
     color: var(--color-gray);
 }
 
+h3 {
+    font-family: "Spartan Bold", sans-serif;
+    font-size: 1.8rem;
+}
+
 /* BASIC AND REUSABLE CLASSES */
 
 .container {
@@ -182,4 +187,65 @@ h2 {
     height: 10rem;
     background-image: url("images/pattern-lines.svg");
     background-repeat: no-repeat;
+}
+
+/* HIGHLIGHTS SECTION */
+
+.highlights {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 20rem 0 5rem;
+    margin-top: -25rem;
+}
+
+.highlights .row {
+    align-items: flex-start;
+}
+
+.highlights .col-2 {
+    flex-basis: 50%;
+}
+
+.highlights .col-2:first-child {
+    padding-right: 10rem;
+}
+
+.highlights .content-box {
+    transform: translateY(0);
+}
+
+.highlights h2 {
+    color: var(--white-color);
+}
+
+.highlights h3 {
+    padding-top: 1rem;
+    margin-bottom: 1.7rem;
+}
+
+.menu-item {
+    font-size: 1.49rem;
+    display: flex;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+}
+
+.menu-item:not(:last-child) {
+    border-bottom: 1px solid rgb(36, 43, 55);
+}
+
+.menu-image-box {
+    display: flex;
+    align-items: flex-start;
+}
+
+.menu-image {
+    position: relative;
+    z-index: 10;
+}
+
+.divide {
+    position: relative;
+    top: 1.5rem;
+    left: -3.5rem;
 }
