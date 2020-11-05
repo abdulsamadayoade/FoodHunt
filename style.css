@@ -22,14 +22,15 @@
 }
 
 @font-face {
-    font-family: "Spartan ExtraLight";
-    src: url("textfont/Spartan-ExtraLight.ttf") format("truetype");
+    font-family: "Spartan SemiBold";
+    src: url("textfont/Spartan-SemiBold.ttf") format("truetype");
 }
 
 :root {
     --white-color: #fff;
     --black-color: #000;
     --color-gray: #242b37;
+    --color-gray-light-2: #4c4c4c;
     --color-gray-light: #5c6779;
     --dark-bg: #111111;
 }
@@ -110,7 +111,6 @@ h3 {
 .btn-black:hover {
     color: var(--black-color);
     background-color: var(--white-color);
-    /* border-color: var(--black-color); */
 }
 
 .btn-black--transparent {
@@ -267,18 +267,57 @@ h3 {
 /* EVENTS SECTION */
 
 .events {
-    padding: 20rem 0;
+    padding: 14rem 0;
+    background-image: url("images/pattern-curve-top-right.svg");
+    background-position: top left -35rem;
+    background-repeat: no-repeat;
+}
+
+.events__image--box {
+    position: relative;
+}
+
+.events__image--box::before {
+    content: '';
+    position: absolute;
+    top: -1.5rem;
+    left: -5rem;
+    width: 20rem;
+    height: 10rem;
+    background-image: url("images/pattern-lines.svg");
+    background-repeat: no-repeat;
+    z-index: 5;
 }
 
 .events__image--box img {
     display: block;
     box-shadow: 0rem 4.9rem 7.9rem 0rem rgba(0, 0, 0, 0.4);
-    transform: scale(.5);
+    transform: scale(.92);
 }
 
-/* .events__text--box {
-    transform: translateY(33%);
-} */
+.events__text--box {
+    padding-top: 7rem;
+    padding-left: 5rem;
+}
+
+.events__text--box p {
+    margin: 3rem 0;
+}
+
+.events__text--box ul {
+    margin-top: 5rem;
+}
+
+.events__text--box ul li {
+    font-family: "Spartan SemiBold", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 2.6px;
+    color: var(--color-gray-light-2);
+}
+
+.events__text--box ul li:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
 
 /* RESERVATION SECTION */
 
@@ -309,7 +348,7 @@ footer .row {
     align-items: flex-start;
 }
 
-footer ul li {
+ul li {
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 1px;
