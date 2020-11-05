@@ -94,6 +94,8 @@ h3 {
     font-size: 1.45rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    border: none;
+    outline: none;
     display: inline-block;
     padding: 2rem 4rem;
     transition: all .3s ease;
@@ -101,12 +103,19 @@ h3 {
 
 .btn-black {
     color: var(--white-color);
-    border: 1px solid var(--white-color);
+    background-color: var(--black-color);
+    border: 1px solid var(--black-color);
 }
 
 .btn-black:hover {
     color: var(--black-color);
     background-color: var(--white-color);
+    /* border-color: var(--black-color); */
+}
+
+.btn-black--transparent {
+    background: transparent;
+    border: 1px solid var(--white-color);
 }
 
 /* HEADER */
@@ -254,6 +263,22 @@ h3 {
     top: 1.5rem;
     left: -3.5rem;
 }
+
+/* EVENTS SECTION */
+
+.events {
+    padding: 20rem 0;
+}
+
+.events__image--box img {
+    display: block;
+    box-shadow: 0rem 4.9rem 7.9rem 0rem rgba(0, 0, 0, 0.4);
+    transform: scale(.5);
+}
+
+/* .events__text--box {
+    transform: translateY(33%);
+} */
 
 /* RESERVATION SECTION */
 
