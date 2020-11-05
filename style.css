@@ -54,14 +54,16 @@ h1 {
     font-size: 6.2rem;
 }
 
-h2 {
+h2, h3 {
     font-family: "Spartan Bold", sans-serif;
+}
+
+h2 {
     font-size: 4rem;
     color: var(--color-gray);
 }
 
 h3 {
-    font-family: "Spartan Bold", sans-serif;
     font-size: 1.8rem;
 }
 
@@ -282,7 +284,7 @@ footer .row {
     align-items: flex-start;
 }
 
-ul li {
+footer ul li {
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 1px;
