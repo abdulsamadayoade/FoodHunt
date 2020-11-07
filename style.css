@@ -308,7 +308,13 @@ h3 {
     margin-top: 5rem;
 }
 
-.events__text--box ul li {
+.events__text--box ul button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    text-transform: uppercase;
     font-family: "Spartan SemiBold", sans-serif;
     font-size: 1.4rem;
     letter-spacing: 2.6px;
