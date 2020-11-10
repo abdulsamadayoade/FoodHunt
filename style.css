@@ -266,18 +266,18 @@ h3 {
 
 /* EVENTS SECTION */
 
-.events {
+.event {
     padding: 14rem 0;
     background-image: url("images/pattern-curve-top-right.svg");
     background-position: top left -35rem;
     background-repeat: no-repeat;
 }
 
-.events__image--box {
+.event__image--box {
     position: relative;
 }
 
-.events__image--box::before {
+.event__image--box::before {
     content: '';
     position: absolute;
     top: -1.5rem;
@@ -289,26 +289,26 @@ h3 {
     z-index: 5;
 }
 
-.events__image--box img {
+.event__image--box img {
     display: block;
     box-shadow: 0rem 4.9rem 7.9rem 0rem rgba(0, 0, 0, 0.4);
     transform: scale(.92);
 }
 
-.events__text--box {
+.event__text--box {
     padding-top: 7rem;
     padding-left: 5rem;
 }
 
-.events__text--box p {
+.event__text--box p {
     margin: 3rem 0;
 }
 
-.events__text--box ul {
+.event__text--box ul {
     margin-top: 5rem;
 }
 
-.events__text--box ul button {
+.event__text--box ul button {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -321,8 +321,12 @@ h3 {
     color: var(--color-gray-light-2);
 }
 
-.events__text--box ul li:not(:last-child) {
+.event__text--box ul li:not(:last-child) {
     margin-bottom: 2.5rem;
+}
+
+.show {
+    display: block;
 }
 
 /* RESERVATION SECTION */
