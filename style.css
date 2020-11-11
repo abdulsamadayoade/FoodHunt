@@ -290,9 +290,13 @@ h3 {
 }
 
 .event__image--box img {
-    display: block;
+    display: none;
     box-shadow: 0rem 4.9rem 7.9rem 0rem rgba(0, 0, 0, 0.4);
     transform: scale(.92);
+}
+
+.event__image--box .show {
+    display: block;
 }
 
 .event__text--box {
