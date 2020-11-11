@@ -330,7 +330,21 @@ h3 {
 }
 
 .event__text--box ul li .active {
+    display: block;
     opacity: .5;
+    position: relative;
+}
+
+.event__text--box ul li .active::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -11rem;
+    display: block;
+    height: 1px;
+    width: 8rem;
+    margin: 5px auto 0 auto;
+    background-color: #9e7f66;
 }
 
 /* RESERVATION SECTION */
