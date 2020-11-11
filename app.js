@@ -35,5 +35,9 @@ eventItems.forEach(function (item, i) {
             item.classList.remove('show');
         })
         events[i].image.classList.add('show');
+        eventItems.forEach(item => {
+            item.classList.remove('active');
+        })
+        item.classList.toggle('active');
     })
 })

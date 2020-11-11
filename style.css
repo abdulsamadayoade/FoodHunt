@@ -329,8 +329,8 @@ h3 {
     margin-bottom: 2.5rem;
 }
 
-.show {
-    display: block;
+.event__text--box ul li .active {
+    opacity: .5;
 }
 
 /* RESERVATION SECTION */
