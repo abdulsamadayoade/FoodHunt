@@ -4,207 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dine - Restaurant Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dine - Exquisite dining since 1989</title>
+    <link rel="stylesheet" href="styles/css/main.css">
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header">
         <div class="container">
-            <a href="index.html" clas="logo">
-                <img src="images/logo.svg" alt="dine logo">
-            </a>
-
-            <div class="header_text-box">
-                <h1>Exquisite dining since 1989</h1>
-                <p>Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the
-                    comfort of our farmhouse.</p>
-                <a href="#" class="btn btn-black btn-black--transparent">Book a table</a>
+            <img src="images/logo.svg" class="header__logo" alt="Dine logo">
+            <div class="header__text-box">
+                <h1 class="header__heading">Exquisite dining since 1989</h1>
+                <p class="header__paragraph paragraph">Experience our seasonal menu in beautiful country
+                    surroundings.
+                    Eat the freshest
+                    produce from the comfort of our farmhouse.</p>
+                <a href="booking.html" class="header__btn btn btn-transparent">Book a table</a>
             </div>
         </div>
     </header>
 
-    <!-- MAIN -->
-    <main>
-        <!-- FAMILY SECTION -->
-        <section class="family">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="image-box"></div>
-                    </div>
-                    <div class="col-2">
-                        <div class="content-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="71" height="7">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path fill="#9E7F66" d="M15 3h56v1H15z"></path>
-                                    <circle cx="3.5" cy="3.5" r="3" stroke="#9E7F66"></circle>
-                                </g>
-                            </svg>
-                            <h2>Enjoyable place<br> for all the family</h2>
-                            <p class="color-grey">Our relaxed surroundings make dining with us a great experience for
-                                everyone. We can even
-                                arrange a tour of the farm before your meal.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- LOCALLY SECTION -->
-        <section class="locally">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="content-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="71" height="7">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path fill="#9E7F66" d="M15 3h56v1H15z"></path>
-                                    <circle cx="3.5" cy="3.5" r="3" stroke="#9E7F66"></circle>
-                                </g>
-                            </svg>
-                            <h2>The most locally<br> sourced food</h2>
-                            <p class="color-grey">All our ingredients come directly from our farm or local fishery. So
-                                you can be sure that you’re eating the freshest, most sustainable food.</p>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="image-box"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- HIGHLIGHTS SECTION -->
-        <section class="highlights">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="content-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="71" height="7">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path fill="#9E7F66" d="M15 3h56v1H15z"></path>
-                                    <circle cx="3.5" cy="3.5" r="3" stroke="#9E7F66"></circle>
-                                </g>
-                            </svg>
-                            <h2>A few highlights<br> from our menu</h2>
-                            <p>We cater for all dietary requirements, but here’s a glimpse at some of our diner’s
-                                favourites. Our menu is revamped every season.</p>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="menu-box">
-                            <div class="menu-item">
-                                <div class="menu-image-box">
-                                    <img src="images/salmon.jpg" alt="salmon" class="menu-image">
-                                    <img src="images/pattern-divide.svg" class="divide">
-                                </div>
-                                <div class="menu-text">
-                                    <h3>Seared Salmon Fillet</h3>
-                                    <p>Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-image-box">
-                                    <img src="images/beef.jpg" alt="beef" class="menu-image">
-                                    <img src="images/pattern-divide.svg" class="divide">
-                                </div>
-                                <div class="menu-text">
-                                    <h3>Rosemary Filet Mignon</h3>
-                                    <p>Our prime beef served to your taste with a delicious choice of seasonal sides.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <div class="menu-image-box">
-                                    <img src="images/chocolate.jpg" alt="chocolate" class="menu-image">
-                                    <img src="images/pattern-divide.svg" class="divide">
-                                </div>
-                                <div class="menu-text">
-                                    <h3>Summer Fruit Chocolate Mousse</h3>
-                                    <p>Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EVENT SECTION -->
-        <section class="event">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <div class="event__image--box">
-                            <img src="images/family-gathering-desktop.jpg" id="event__image--family"
-                                class="show event__img" alt="family eating together">
-                            <img src="images/special-events-desktop.jpg" id="event__image--special" class="event__img"
-                                alt="family raising their drinks">
-                            <img src="images/social-events-desktop.jpg" id="event__image--social" class="event__img"
-                                alt="wine glasses on the table surrouned by people">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="event__text--box">
-                            <h2 id="event__heading">Family Gathering</h2>
-                            <p id="event__description">We love catering for entire families. So please bring everyone
-                                along for a special
-                                meal
-                                with
-                                your loved ones. We’ll provide a memorable experience for all.</p>
-                            <a href="#" class="btn btn-black">Book a table</a>
-                            <ul>
-                                <li>
-                                    <button id="family" class="event__item active">Family Gathering</button>
-                                </li>
-                                <li>
-                                    <button id="special" class="event__item">Special Events</button>
-                                </li>
-                                <li>
-                                    <button id="social" class="event__item">Social Events</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- RESERVATION SECTION -->
-        <section class="reservation">
-            <div class="container">
-                <div class="row">
-                    <h2>Ready to make a reservation?</h2>
-                    <a href="#" class="btn btn-black btn-black--transparent">Book a table</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER SECTION -->
-    <footer>
+    <!-- FEATURES -->
+    <section class="features">
         <div class="container">
-            <div class="row">
-                <a href="index.html" clas="logo">
-                    <img src="images/logo.svg" alt="dine logo">
-                </a>
-                <ul class="contact">
-                    <li>Marthwaite, Sedbergh</li>
-                    <li>Cumbria</li>
-                    <li>+00 44 123 4567</li>
-                </ul>
-                <ul class="opening-time">
-                    <li>Open Times</li>
-                    <li>Mon - Fri: 09:00 AM - 10:00 pm</li>
-                    <li>Sat - Sun: 09:00 AM - 11:30 pm</li>
-                </ul>
+            <div class="feature">
+                <div class="feature__image-box">
+                    <picture class="img">
+                        <source srcset="./images/homepage/enjoyable-place-mobile.jpg 1x, 
+                    ./images/homepage/enjoyable-place-mobile@2x.jpg 2x," media="(max-width: 48em)">
+                        <source srcset="./images/homepage/enjoyable-place-tablet.jpg 1x, 
+                    ./images/homepage/enjoyable-place-tablet@2x.jpg 2x,"
+                            media="(min-width: 48em) and (max-width: 80em)">
+                        <source srcset="./images/homepage/enjoyable-place-desktop.jpg 1x, 
+                    ./images/homepage/enjoyable-place-desktop@2x.jpg 2x," media="(min-width: 80em)">
+                        <img src="./images/homepage/enjoyable-place-desktop.jpg" alt="Sheep pasture on a meadow">
+                    </picture>
+                </div>
+                <div class="m-feature__text-box">
+                    <h2 class="heading -h2 -black">Enjoyable place for all the family</h2>
+                    <p class="paragraph -black">Our relaxed surroundings make dining with us a great experience for
+                        everyone. We can even arrange a tour of the farm before your meal.</p>
+                </div>
             </div>
         </div>
-    </footer>
-
-    <script src="app.js"></script>
+    </section>
 </body>
 
 </html>
