@@ -1,0 +1,23 @@
+.btn {
+    padding: 2.5rem 5.4rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: $line-height-S;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    transition: all .3s ease;
+}
+
+.btn-transparent {
+    color: $color-white;
+    border: 1px solid $color-white;
+    background-color: transparent;
+
+    &:hover {
+        color: $color-gray-dark;
+        background-color: $color-white;
+    }
+}

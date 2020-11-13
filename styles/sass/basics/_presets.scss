@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Spartan Regular", sans-serif;
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 110rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
