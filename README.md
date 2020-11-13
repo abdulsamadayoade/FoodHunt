@@ -1,6 +1,5 @@
 # Dine
 
-
 Dine is a two-pages website built for a restaurant.
 
 Built using HTML, CSS & Javascript.
