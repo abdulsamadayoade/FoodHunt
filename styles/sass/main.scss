@@ -59,11 +59,13 @@
 
 // BASIC STYLES AND PRESETS
 html {
-    font-family: "Spartan Regular", sans-serif;
+    font-family: var(--ff-regular);
     font-size: 10px;
 }
 
 body {
+    background-color: var(--color-4);
+    color: var(--color-3);
     font-size: 1.5rem;
 }
 
@@ -85,11 +87,59 @@ button {
 
 // REUSABLE CLASSES
 .container {
-    max-width: 110rem;
+    max-width: 120rem;
     padding: 0 2rem;
     margin: 0 auto;
 }
 
 .row {
     display: flex;
+}
+
+// HEADER
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    padding: 3.5rem 0;
+
+    &__logo {
+        color: var(--color-1-dark);
+        font-family: var(--ff-semibold);
+        font-size: 1.9rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -.2rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: var(--color-1-dark);
+            border-radius: 50%;
+            transition: opacity .3s;
+        }
+
+        &:hover::after {
+            opacity: 0;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 1.8rem;
+    }
+
+    &__link {
+        font-family: var(--ff-semibold);
+        color: inherit;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: var(--color-1-dark);
+        }
+    }
+
 }

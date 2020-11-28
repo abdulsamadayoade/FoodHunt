@@ -52,11 +52,13 @@
 }
 
 html {
-  font-family: "Spartan Regular", sans-serif;
+  font-family: var(--ff-regular);
   font-size: 10px;
 }
 
 body {
+  background-color: var(--color-4);
+  color: var(--color-3);
   font-size: 1.5rem;
 }
 
@@ -77,7 +79,7 @@ button {
 }
 
 .container {
-  max-width: 110rem;
+  max-width: 120rem;
   padding: 0 2rem;
   margin: 0 auto;
 }
@@ -86,4 +88,60 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 7rem;
+  padding: 3.5rem 0;
+}
+
+.nav__logo {
+  color: var(--color-1-dark);
+  font-family: var(--ff-semibold);
+  font-size: 1.9rem;
+  position: relative;
+}
+
+.nav__logo::after {
+  content: '';
+  position: absolute;
+  top: -.2rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-1-dark);
+  border-radius: 50%;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.nav__logo:hover::after {
+  opacity: 0;
+}
+
+.nav__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-column-gap: 1.8rem;
+          column-gap: 1.8rem;
+}
+
+.nav__link {
+  font-family: var(--ff-semibold);
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.nav__link:hover {
+  color: var(--color-1-dark);
 }
