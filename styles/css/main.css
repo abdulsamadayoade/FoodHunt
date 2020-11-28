@@ -4,18 +4,8 @@
 }
 
 @font-face {
-  font-family: "Spartan Thin";
-  src: url("../../../textfont/Spartan-Thin.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Spartan SemiBold";
   src: url("../../../textfont/Spartan-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Spartan Bold";
-  src: url("../../../textfont/Spartan-Bold.ttf") format("truetype");
 }
 
 :root {
@@ -26,12 +16,11 @@
   --color-3-light: hsl(0, 0%, 65%);
   --color-4: hsl(160, 60%, 99%);
   --color-5: hsl(0, 0%, 100%);
-  --ff-thin: "Spartan Thin", sans-serif;
   --ff-regular: "Spartan Regular", sans-serif;
   --ff-semibold: "Spartan SemiBold", sans-serif;
-  --ff-bold: "Spartan Bold", sans-serif;
   --font-size-h1: 4rem;
   --font-size-h2: 2.7rem;
+  --font-size-h4: 1.8rem;
   --letter-spacing-L: 4.17px;
   --letter-spacing-S: 2px;
   --line-height-L: 1.8;
@@ -72,7 +61,7 @@ a {
 }
 
 section {
-  padding: 8.5rem 0;
+  padding: 9rem 0;
 }
 
 img {
@@ -177,6 +166,11 @@ h2 {
   font-size: var(--font-size-h2);
   margin-bottom: 1.5rem;
   color: var(--color-1);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  font-family: var(--ff-semibold);
 }
 
 .subheading {
@@ -320,6 +314,7 @@ h2 {
 .services__col {
   text-align: center;
   padding: 1.2rem 2.2rem;
+  margin-top: 3rem;
 }
 
 .services__col h3 {
@@ -332,4 +327,79 @@ h2 {
   height: 6.4rem;
   fill: var(--color-1);
   margin-bottom: 1.7rem;
+}
+
+.menu .grid-3 {
+  gap: 6rem 3rem;
+  margin-top: 5rem;
+}
+
+.menu__col {
+  background-color: var(--color-5);
+  height: 48rem;
+  position: relative;
+}
+
+.menu__image img {
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+
+.menu__text {
+  background-color: var(--color-5);
+  padding: 2.3rem 2rem;
+}
+
+.menu__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--color-2);
+  padding: 1rem 0;
+}
+
+.menu__info {
+  margin: 1.5rem 0;
+  line-height: 1.65;
+}
+
+.menu__rating {
+  margin-top: 5.3rem;
+}
+
+.menu__rating i {
+  font-size: 1.5rem;
+  color: var(--color-1);
+}
+
+.menu__add {
+  background-color: var(--color-1);
+  color: var(--color-5);
+  height: 5.5rem;
+  width: 9rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__add svg {
+  fill: var(--color-5);
+  margin-left: 2rem;
+}
+
+.menu__add svg:hover {
+  cursor: pointer;
 }
