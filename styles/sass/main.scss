@@ -1,2 +1,95 @@
-@import 'basics/all';
-@import 'pages/all';
+@font-face {
+    font-family: "Spartan Regular";
+    src: url("../../../textfont/Spartan-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spartan Thin";
+    src: url("../../../textfont/Spartan-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spartan SemiBold";
+    src: url("../../../textfont/Spartan-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Spartan Bold";
+    src: url("../../../textfont/Spartan-Bold.ttf") format("truetype");
+}
+
+:root {
+    // COLORS
+    --color-1: hsl(151, 93%, 32%);
+    --color-1-dark: hsl(157, 94%, 27%);
+    --color-2: hsl(0, 0%, 22%);
+    --color-3: hsl(0, 0%, 44%);
+    --color-3-light: hsl(0, 0%, 65%);
+    --color-4: hsl(160, 60%, 99%);
+    --color-5: hsl(0, 0%, 100%);
+
+    // FONTS
+    --ff-thin: "Spartan Thin", sans-serif;
+    --ff-regular: "Spartan Regular", sans-serif;
+    --ff-semibold: "Spartan SemiBold", sans-serif;
+    --ff-bold: "Spartan Bold", sans-serif;
+
+    --font-size-h1: 6.4rem;
+    --font-size-h2: 24px;
+    --font-size-h3: 18px;
+    --font-size-h4: 12px;
+    --font-size-h5: 10px;
+
+    // LETTER SPACING
+    --letter-spacing-L: 4.17px;
+    --letter-spacing-S: 2px; 
+
+    // LINE HEIGHT
+    --line-height-L: 48px;
+    --line-height-M: 25px;
+    --line-height-S: 14px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// BASIC STYLES AND PRESETS
+html {
+    font-family: "Spartan Regular", sans-serif;
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+// REUSABLE CLASSES
+.container {
+    max-width: 110rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}

@@ -1,3 +1,47 @@
+@font-face {
+  font-family: "Spartan Regular";
+  src: url("../../../textfont/Spartan-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Spartan Thin";
+  src: url("../../../textfont/Spartan-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Spartan SemiBold";
+  src: url("../../../textfont/Spartan-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Spartan Bold";
+  src: url("../../../textfont/Spartan-Bold.ttf") format("truetype");
+}
+
+:root {
+  --color-1: hsl(151, 93%, 32%);
+  --color-1-dark: hsl(157, 94%, 27%);
+  --color-2: hsl(0, 0%, 22%);
+  --color-3: hsl(0, 0%, 44%);
+  --color-3-light: hsl(0, 0%, 65%);
+  --color-4: hsl(160, 60%, 99%);
+  --color-5: hsl(0, 0%, 100%);
+  --ff-thin: "Spartan Thin", sans-serif;
+  --ff-regular: "Spartan Regular", sans-serif;
+  --ff-semibold: "Spartan SemiBold", sans-serif;
+  --ff-bold: "Spartan Bold", sans-serif;
+  --font-size-h1: 6.4rem;
+  --font-size-h2: 24px;
+  --font-size-h3: 18px;
+  --font-size-h4: 12px;
+  --font-size-h5: 10px;
+  --letter-spacing-L: 4.17px;
+  --letter-spacing-S: 2px;
+  --line-height-L: 48px;
+  --line-height-M: 25px;
+  --line-height-S: 14px;
+}
+
 *,
 *::before,
 *::after {
@@ -13,7 +57,7 @@ html {
 }
 
 body {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 p {
@@ -42,115 +86,4 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@font-face {
-  font-family: "Spartan Regular";
-  src: url("../../../textfont/Spartan-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Spartan Thin";
-  src: url("../../../textfont/Spartan-Thin.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Spartan SemiBold";
-  src: url("../../../textfont/Spartan-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Spartan Bold";
-  src: url("../../../textfont/Spartan-Bold.ttf") format("truetype");
-}
-
-.btn {
-  padding: 2.5rem 5.4rem;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  line-height: 14px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  border: none;
-  outline: none;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.btn-transparent {
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  background-color: transparent;
-}
-
-.btn-transparent:hover {
-  color: #111111;
-  background-color: #FFFFFF;
-}
-
-.header {
-  background-color: #111111;
-  background-image: url("../../../images/hero-bg-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  padding: 6rem 0 2rem;
-  position: relative;
-}
-
-.header__text-box {
-  position: absolute;
-  top: 90%;
-  -webkit-transform: translateY(-90%);
-          transform: translateY(-90%);
-  width: 55rem;
-  max-width: 100%;
-  color: #FFFFFF;
-}
-
-.header__heading {
-  font-family: "Spartan Thin", sans-serif;
-  font-size: 6.4rem;
-}
-
-.header__paragraph {
-  margin-top: 3rem;
-}
-
-.header__btn {
-  margin-top: 3rem;
-}
-
-.features {
-  background-image: url(../../../images/pattern-curve-top-right.svg), url(../../../images/pattern-curve-top-left.svg);
-  background-repeat: no-repeat;
-  background-position: top 322px left, bottom 124px right;
-}
-
-.features .feature {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 116px;
-}
-
-.features .feature__image-box {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.features .feature__image-box img {
-  -webkit-box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
-  width: 100%;
-}
-
-.features .feature__heading::before {
-  content: url(../../../images/pattern-divide.svg);
-  display: block;
-  width: 100%;
-  height: 87px;
 }
