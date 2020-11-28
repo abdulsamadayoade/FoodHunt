@@ -31,10 +31,7 @@
   --ff-semibold: "Spartan SemiBold", sans-serif;
   --ff-bold: "Spartan Bold", sans-serif;
   --font-size-h1: 4rem;
-  --font-size-h2: 24px;
-  --font-size-h3: 18px;
-  --font-size-h4: 12px;
-  --font-size-h5: 10px;
+  --font-size-h2: 2.7rem;
   --letter-spacing-L: 4.17px;
   --letter-spacing-S: 2px;
   --line-height-L: 1.8;
@@ -75,7 +72,7 @@ a {
 }
 
 section {
-  padding: 4rem 0;
+  padding: 8rem 0;
 }
 
 img {
@@ -92,6 +89,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid-3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 1.8rem;
+          column-gap: 1.8rem;
 }
 
 .btn {
@@ -153,6 +162,22 @@ img {
   fill: var(--color-5);
 }
 
+h1, h2 {
+  color: var(--color-2);
+  line-height: var(--line-height-M);
+  font-family: var(--ff-semibold);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: 1.5rem;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,6 +234,10 @@ img {
   color: var(--color-1-dark);
 }
 
+.hero {
+  padding: 4rem 0;
+}
+
 .hero__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,15 +247,66 @@ img {
           align-items: center;
 }
 
-.hero__text h1 {
-  font-size: var(--font-size-h1);
-  line-height: var(--line-height-M);
-  color: var(--color-2);
-  font-family: var(--ff-semibold);
-  margin-bottom: 2rem;
-}
-
 .hero__text p {
   width: 70%;
   margin-bottom: 3rem;
+}
+
+.signature .subheading {
+  margin-bottom: 3.5rem;
+  width: 70rem;
+  max-width: 100%;
+}
+
+.signature__item {
+  height: 32rem;
+  width: 32rem;
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.signature__item:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.signature__item--box {
+  position: absolute;
+  padding: 1.2rem;
+  background-color: var(--color-5);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.signature__item--box p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signature .item--one {
+  background-image: url("../../images/food1.jpg");
+}
+
+.signature .item--two {
+  background-image: url("../../images/food2.jpg");
+}
+
+.signature .item--three {
+  background-image: url("../../images/food3.jpg");
 }

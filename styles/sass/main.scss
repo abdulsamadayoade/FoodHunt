@@ -34,10 +34,7 @@
     --ff-bold: "Spartan Bold", sans-serif;
 
     --font-size-h1: 4rem;
-    --font-size-h2: 24px;
-    --font-size-h3: 18px;
-    --font-size-h4: 12px;
-    --font-size-h5: 10px;
+    --font-size-h2: 2.7rem;
 
     // LETTER SPACING
     --letter-spacing-L: 4.17px;
@@ -82,7 +79,7 @@ a {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 8rem 0;
 }
 
 img {
@@ -98,6 +95,15 @@ img {
 
 .row {
     display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.8rem;
 }
 
 // BUTTONS
@@ -152,6 +158,23 @@ img {
     }
 }
 
+// HEADINGS
+h1, h2 {
+    color: var(--color-2);
+    line-height: var(--line-height-M);
+    font-family: var(--ff-semibold);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    margin-bottom: 1.5rem;
+}
+
 // HEADER
 .nav {
     display: flex;
@@ -202,21 +225,66 @@ img {
 
 // HERO SECTION
 .hero {
+    padding: 4rem 0;
+
     &__text {
         display: flex;
         align-items: center;
-
-        h1 {
-            font-size: var(--font-size-h1);
-            line-height: var(--line-height-M);
-            color: var(--color-2);
-            font-family: var(--ff-semibold);
-            margin-bottom: 2rem;
-        }
 
         p {
             width: 70%;
             margin-bottom: 3rem;
         }
+    }
+}
+
+// SIGNATURE ITEMS SECTION
+.signature {
+    .subheading {
+        margin-bottom: 3.5rem;
+        width: 70rem;
+        max-width: 100%;
+    }
+
+    &__item {
+        height: 32rem;
+        width: 32rem;
+        background-size: cover;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        position: relative;
+        transition: transform .3s;
+
+        &:hover {
+            transform: translateY(-1rem);
+        }
+
+        &--box {
+            position: absolute;
+            padding: 1.2rem;
+            background-color: var(--color-5);
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .item--one {
+        background-image: url("../../images/food1.jpg");
+    }
+
+    .item--two {
+        background-image: url("../../images/food2.jpg");
+    }
+
+    .item--three {
+        background-image: url("../../images/food3.jpg");
     }
 }
