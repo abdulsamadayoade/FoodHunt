@@ -30,16 +30,16 @@
   --ff-regular: "Spartan Regular", sans-serif;
   --ff-semibold: "Spartan SemiBold", sans-serif;
   --ff-bold: "Spartan Bold", sans-serif;
-  --font-size-h1: 6.4rem;
+  --font-size-h1: 4rem;
   --font-size-h2: 24px;
   --font-size-h3: 18px;
   --font-size-h4: 12px;
   --font-size-h5: 10px;
   --letter-spacing-L: 4.17px;
   --letter-spacing-S: 2px;
-  --line-height-L: 48px;
-  --line-height-M: 25px;
-  --line-height-S: 14px;
+  --line-height-L: 1.8;
+  --line-height-M: 1.4;
+  --line-height-S: 1;
 }
 
 *,
@@ -63,7 +63,7 @@ body {
 }
 
 p {
-  line-height: 1.6;
+  line-height: var(--line-height-L);
 }
 
 ul {
@@ -74,8 +74,12 @@ a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
+section {
+  padding: 4rem 0;
+}
+
+img {
+  width: 100%;
 }
 
 .container {
@@ -88,6 +92,65 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1.7rem 4rem;
+  border-radius: 10rem;
+  outline: none;
+  position: relative;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn--primary {
+  background-color: var(--color-1-dark);
+  color: var(--color-5);
+}
+
+.btn--primary::after {
+  background-color: var(--color-1-dark);
+}
+
+.btn__flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn__flex svg {
+  margin-left: .5rem;
+  fill: var(--color-5);
 }
 
 .nav {
@@ -144,4 +207,26 @@ button {
 
 .nav__link:hover {
   color: var(--color-1-dark);
+}
+
+.hero__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__text h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-M);
+  color: var(--color-2);
+  font-family: var(--ff-semibold);
+  margin-bottom: 2rem;
+}
+
+.hero__text p {
+  width: 70%;
+  margin-bottom: 3rem;
 }
