@@ -69,10 +69,15 @@ img {
   width: 100%;
 }
 
-.container {
+.container,
+.container-sm {
   max-width: 120rem;
   padding: 0 2rem;
   margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 90rem;
 }
 
 .row {
@@ -452,4 +457,51 @@ h4 {
 
 .menu__add svg:hover {
   cursor: pointer;
+}
+
+.app .grid {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 4.5rem;
+          column-gap: 4.5rem;
+}
+
+.app__image {
+  width: 37rem;
+}
+
+.app__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app__content h2 {
+  margin-bottom: 3rem;
+}
+
+.app__content p {
+  margin-bottom: 1.2rem;
+}
+
+.app__download {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (12rem)[2];
+      grid-template-columns: repeat(2, 12rem);
+  -webkit-column-gap: 1.2rem;
+          column-gap: 1.2rem;
+}
+
+.app__download img {
+  width: 12rem;
+  height: auto;
 }

@@ -78,10 +78,15 @@ img {
 }
 
 // REUSABLE CLASSES
-.container {
+.container,
+.container-sm {
     max-width: 120rem;
     padding: 0 2rem;
     margin: 0 auto;
+}
+
+.container-sm {
+    max-width: 90rem;
 }
 
 .row {
@@ -426,6 +431,43 @@ h4 {
             }
         }
     }
+}
 
+// MOBILE APP SECTION
+.app {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4.5rem;
+    }
 
+    &__image {
+        width: 37rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            margin-bottom: 3rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    &__download {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 12rem);
+        column-gap: 1.2rem;
+
+        img {
+            width: 12rem;
+            height: auto;
+        }
+
+    }
 }
