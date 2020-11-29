@@ -77,6 +77,18 @@ img {
     width: 100%;
 }
 
+// MIXINS & EXTENDS
+@mixin heading-top {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    height: 2rem;
+    width: 7rem;
+    background-image: url("../../images/pattern-divide.svg");
+    background-repeat: no-repeat;
+}
+
 // REUSABLE CLASSES
 .container,
 .container-md,
@@ -164,22 +176,15 @@ h1, h2 {
     color: var(--color-2);
     line-height: var(--line-height-M);
     font-family: var(--ff-semibold);
+    position: relative;
 }
 
 h1 {
     font-size: var(--font-size-h1);
     margin-bottom: 2rem;
-    position: relative;
 
     &::before {
-        content: '';
-        position: absolute;
-        top: -2rem;
-        left: 0;
-        height: 2rem;
-        width: 7rem;
-        background-image: url("../../images/pattern-divide.svg");
-        background-repeat: no-repeat;
+        @include heading-top;
     }
 }
 
@@ -189,12 +194,18 @@ h2 {
     color: var(--color-1);
 }
 
+.heading {
+    &::before {
+        @include heading-top;
+    }
+}
+
 h4 {
     font-size: var(--font-size-h4);
     font-family: var(--ff-semibold);
 }
 
-.subheading {
+.description {
     margin-bottom: 3.5rem;
     width: 70rem;
     max-width: 100%;
@@ -468,6 +479,18 @@ h4 {
 
         h2 {
             margin-bottom: 3rem;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -2rem;
+                left: 0;
+                height: 2rem;
+                width: 7rem;
+                background-image: url("../../images/pattern-divide.svg");
+                background-repeat: no-repeat;
+            }
         }
 
         p {
