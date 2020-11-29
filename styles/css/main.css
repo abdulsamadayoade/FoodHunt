@@ -197,23 +197,6 @@ h4 {
   color: var(--color-1);
   font-family: var(--ff-semibold);
   font-size: 1.9rem;
-  position: relative;
-}
-
-.nav__logo::after {
-  content: '';
-  position: absolute;
-  top: -.2rem;
-  width: 1rem;
-  height: 1rem;
-  background-color: var(--color-1);
-  border-radius: 50%;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
-}
-
-.nav__logo:hover::after {
-  opacity: 0;
 }
 
 .nav__list {
@@ -229,6 +212,27 @@ h4 {
   font-family: var(--ff-semibold);
   color: inherit;
   font-size: 1.5rem;
+  position: relative;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-1);
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.nav__link:hover::after {
+  opacity: 1;
 }
 
 .nav__link:hover {
