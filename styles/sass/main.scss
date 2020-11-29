@@ -79,10 +79,15 @@ img {
 
 // REUSABLE CLASSES
 .container,
+.container-md,
 .container-sm {
     max-width: 120rem;
     padding: 0 2rem;
     margin: 0 auto;
+}
+
+.container-md {
+    max-width: 110rem;
 }
 
 .container-sm {
@@ -469,5 +474,16 @@ h4 {
             height: auto;
         }
 
+    }
+}
+
+// BOOK A TABLE SECTION
+.book {
+    background:linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0,0.75)), url("../../images/banner2.jpg");
+
+    .row {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
     }
 }

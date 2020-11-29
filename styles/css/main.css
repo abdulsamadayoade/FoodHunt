@@ -70,10 +70,15 @@ img {
 }
 
 .container,
+.container-md,
 .container-sm {
   max-width: 120rem;
   padding: 0 2rem;
   margin: 0 auto;
+}
+
+.container-md {
+  max-width: 110rem;
 }
 
 .container-sm {
@@ -504,4 +509,19 @@ h4 {
 .app__download img {
   width: 12rem;
   height: auto;
+}
+
+.book {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url("../../images/banner2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../images/banner2.jpg");
+}
+
+.book .row {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
