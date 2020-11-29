@@ -479,11 +479,34 @@ h4 {
 
 // BOOK A TABLE SECTION
 .book {
-    background:linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0,0.75)), url("../../images/banner2.jpg");
+    background:linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0,0.75)), url("../../images/book-bg.jpg");
+
+    h2 {
+        color: var(--color-5);
+    }
 
     .row {
         width: 100%;
         align-items: center;
         justify-content: space-between;
+    }
+}
+
+// FOOTER SECTION
+.footer {
+    background-color: #0a0a0a;
+    padding: 8rem 0;
+
+    a {
+        font-size: 2.2rem;
+    }
+
+    ul {
+        li {
+            font-size: 1.4rem;
+            color: var(--color-5);
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
     }
 }
