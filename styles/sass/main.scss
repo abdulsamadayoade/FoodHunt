@@ -182,7 +182,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 7rem;
+    height: 8.2rem;
     padding: 3.5rem 0;
 
     &__logo {
@@ -192,9 +192,11 @@ h4 {
     }
 
     &__list {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        column-gap: 1.8rem;
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 2.2rem;
     }
 
     &__link {

@@ -189,7 +189,7 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 7rem;
+  height: 8.2rem;
   padding: 3.5rem 0;
 }
 
@@ -200,12 +200,13 @@ h4 {
 }
 
 .nav__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -webkit-column-gap: 1.8rem;
-          column-gap: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 2.2rem;
 }
 
 .nav__link {
