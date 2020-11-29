@@ -383,8 +383,11 @@ h4 {
 
 .menu__col {
   background-color: var(--color-5);
+  border-top-right-radius: 5rem;
   height: 48rem;
   position: relative;
+  -webkit-box-shadow: 0 .2rem .6rem #e4e4e4;
+          box-shadow: 0 .2rem .6rem #e4e4e4;
 }
 
 .menu__image img {
