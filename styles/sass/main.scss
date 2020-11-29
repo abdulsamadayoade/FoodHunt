@@ -54,6 +54,7 @@ body {
     background-color: var(--color-4);
     color: var(--color-3);
     font-size: 1.5rem;
+    overflow-x: hidden;
 }
 
 p {
@@ -196,7 +197,7 @@ h4 {
     }
 
     &__item:not(:last-child) {
-        margin-right: 2.2rem;
+        margin-right: 5rem;
     }
 
     &__link {
@@ -228,11 +229,35 @@ h4 {
         }
     }
 
+    .white {
+        color: var(--color-5);
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1rem;
+            height: 1rem;
+            background-color: var(--color-5);
+            border-radius: 50%;
+            opacity: 0;
+            transition: all .3s;
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+
 }
 
 // HERO SECTION
 .hero {
     padding: 4rem 0;
+    position: relative;
 
     &__text {
         display: flex;
@@ -243,6 +268,20 @@ h4 {
             margin-bottom: 3rem;
         }
     }
+
+    &::before {
+        content: "";
+        background-image: url("../../images/bg-pattern.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        position: absolute;
+        top: -100px;
+        right: -55%;
+        width: 100%;
+        height: 100%;
+        transform: rotate(180deg);
+        z-index: -1;
+      }
 }
 
 // SIGNATURE ITEMS SECTION
