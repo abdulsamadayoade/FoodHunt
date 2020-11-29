@@ -169,6 +169,18 @@ h1, h2 {
 h1 {
     font-size: var(--font-size-h1);
     margin-bottom: 2rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -2rem;
+        left: 0;
+        height: 2rem;
+        width: 7rem;
+        background-image: url("../../images/pattern-divide.svg");
+        background-repeat: no-repeat;
+    }
 }
 
 h2 {
