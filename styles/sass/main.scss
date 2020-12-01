@@ -618,10 +618,6 @@ h4 {
 @media screen and (max-width: 1024px) {
     .hero {
         padding: 9rem 0;
-
-        &::before {
-            display: none;
-        }
     }
 }
 
@@ -675,15 +671,50 @@ h4 {
                 transform: translate(-50%, -50%) rotate(0);
             }
         }
+
+        &__logo {
+            position: relative;
+            z-index: 1
+        }
+
+        &__list {
+            background-color: var(--color-4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 45vh;
+            padding: 8rem 4rem 2rem 4rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            transform: translateY(-40vh);
+            transition: transform .5s;
+        }
+    
+        &__item:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+        &__item:not(:last-child) {
+            margin-right: 0;
+        }
+
+        &__link {
+            &::after {
+                display: none;
+            }
+        }
+    
+        &__list.active {
+            transform: translateY(0);
+        }
     }
 
     .hero {
         &__image {
             text-align: center;
         }
-    }
-    .nav__list {
-        display: none;
     }
 
     .hero {
