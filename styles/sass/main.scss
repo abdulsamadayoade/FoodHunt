@@ -300,6 +300,10 @@ h4 {
         }
     }
 
+    .menu-toggle {
+        display: none;
+    }
+
 }
 
 // HERO SECTION
@@ -686,6 +690,49 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
+    .nav {
+        .menu-toggle {
+            display: inline-block;
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            width: 2rem;
+            height: 2rem;
+
+            @mixin menu-icons {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+    
+            .open {
+                @include menu-icons;
+                opacity: 1;
+                transform: translate(-50%, -50%);
+                transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+            }
+    
+            .close {
+                @include menu-icons;
+                opacity: 0;
+                transform: translate(-50%, -50%) rotate(90deg);
+                transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+            }
+
+            .open.active {
+                opacity: 0;
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
+        
+            .close.active {
+                opacity: 1;
+                transform: translate(-50%, -50%) rotate(0);
+            }
+        }
+    }
+
     .hero {
         &__image {
             text-align: center;
