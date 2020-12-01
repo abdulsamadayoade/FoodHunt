@@ -277,29 +277,6 @@ h4 {
         }
     }
 
-    .white {
-        color: var(--color-5);
-        position: relative;
-
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: -1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 1rem;
-            height: 1rem;
-            background-color: var(--color-5);
-            border-radius: 50%;
-            opacity: 0;
-            transition: all .3s;
-        }
-
-        &:hover::after {
-            opacity: 1;
-        }
-    }
-
     .menu-toggle {
         display: none;
     }
@@ -310,7 +287,6 @@ h4 {
 .hero {
     min-height: calc(100vh - 8.2rem);
     padding: 4rem 0;
-    position: relative;
 
     &__text {
         display: flex;
@@ -320,20 +296,6 @@ h4 {
             width: 70%;
             margin-bottom: 3rem;
         }
-    }
-
-    &::before {
-        content: "";
-        background-image: url("../../images/bg-pattern.svg");
-        background-repeat: no-repeat;
-        background-position: top right;
-        position: absolute;
-        top: -98px;
-        right: -57%;
-        width: 100%;
-        height: 100%;
-        transform: rotate(180deg);
-        z-index: -1;
     }
 }
 
@@ -654,24 +616,6 @@ h4 {
 }
 
 @media screen and (max-width: 1024px) {
-    .nav {
-        .white {
-            color: inherit;
-
-            &::after {
-                background-color: var(--color-1);
-            }
-
-            &:hover::after {
-                opacity: 1;
-            }
-    
-            &:hover {
-                color: var(--color-1);
-            }
-        }
-    }
-
     .hero {
         padding: 9rem 0;
 
