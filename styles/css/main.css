@@ -782,7 +782,7 @@ h4 {
     text-align: center;
   }
   .app__image img {
-    width: 40rem;
+    width: 70%;
   }
   .book .row {
     -webkit-box-orient: vertical;
