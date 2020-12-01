@@ -784,6 +784,9 @@ h4 {
   .app__image img {
     width: 70%;
   }
+  .carousel__control {
+    display: none;
+  }
   .book .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -798,7 +801,7 @@ h4 {
 
 @media screen and (max-width: 500px) {
   .hero img {
-    width: 100%;
+    width: 90%;
   }
   .signature__item {
     width: 100%;
