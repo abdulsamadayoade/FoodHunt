@@ -1,6 +1,6 @@
 # FoodHunt
 
-<img src="images/screenshot.jpg" alt="project">
+<img src="screenshot.jpg" alt="project">
 
 A Landing page for a restaurant.
 
